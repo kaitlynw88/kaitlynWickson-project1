@@ -4,33 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning SCSS</title>
+    <title>kaitlynWickson-project1</title>
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/98f3a36dcd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="headerBanner">
-        <div class="siteNav">
-            <ul>
-                <li><a href="#home"></a>Home</li>
-                <li><a href="#blog"></a>Blog</li>
-                <li><a href="#portfolio"></a>Portfolio</li>
-            </ul>
-        </div><!-- end of siteNav -->
-        <a href="#home">
-            <h1>Creative</h1>
-        </a>
-        <div class="searchCart">
-            <a href="#shop">Shop</a>
-            <a href="#contact">Contact</a>
-            <a href="#" class="bag">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-            <a href="#" class="bag">
-                <i class="fa-solid fa-bag-shopping"></i>
-            </a>
-        </div>
-    </div>
+    <header>
+        <div class="wrapper">
+            <div class="headerBanner">
+                <div class="siteNav">
+                    <ul>
+                        <li><a href="#home"></a>Home</li>
+                        <li><a href="#blog"></a>Blog</li>
+                        <li><a href="#portfolio"></a>Portfolio</li>
+                    </ul>
+                </div><!-- end of siteNav -->
+                <a href="#home">
+                    <h1>Creative</h1>
+                </a>
+                <div class="searchCart">
+                    <a href="#shop">Shop</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#" class="bag">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="#" class="bag">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <p class="counter">0</p>
+                    </a>
+                </div><!-- end searchCart -->
+            </div><!-- end headerBanner -->
+        </div><!-- end wrapper -->
+    </header>
+    <main id="mainContent">
+        <section class="branding" id="branding">
+            <div class="wrapper">
+                <img src="./assets/home-2.jpeg" alt="minimalist desk with plant and computer">
+                <img src="./assets/home-circle-text.png" alt="Branding website pros">
+                <div class="brandingTextContainer">
+                    <div class="brandItem">
+                        <h3>Branding</h3>
+                        <p>Venture first mover advantage incubator metrics focus backing business-to-consumer</p>
+                    </div>
+                    <div class="brandItem">
+                        <h3>Design & Develop </h3>
+                        <p>Venture first mover advantage incubator metrics focus backing business-to-consumer</p>
+                    </div>
+                </div><!-- End of brandingTextContainer -->
+            </div><!-- end of wrapper -->
+        </section>
+        <section class="blog" id="blog">
+            <div class="wrapper">
+                <img src="./assets/home-3.jpeg" alt="photo of a man in a book">
+                <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding.  Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy.  Product management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet backing series</p>
+            </div>
+        </section>
+        <section class="ourTools">
+            <div class="toolBox">
+                <ul>
+                    <li class="toolOptions">
+                        <div class="toolIcon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                
+                        <div class="toolText">
+                            <h3>Unique Design</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn</p>
+                        </div>
+                    </li>
+                    <li class="toolOptions">
+                        <div class="toolIcon">
+                            <i class="fa-solid fa-map-pin"></i>
+                        </div>
+                        <div class="toolText">
+                            <h3>SEO Marketing</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn</p>
+                        </div>
+                    </li>
+                    <li class="toolOptions">
+                        <div class="toolIcon">
+                            <i class="fa-solid fa-display"></i>
+                        </div>
+                        <div class="toolText">
+                            <h3>Retina Ready</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn</p>
+                        </div>
+                    </li>
+                    <li class="toolOptions">
+                        <div class="toolIcon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div class="toolText">
+                            <h3>Ecommerce ready</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn</p>
+                        </div>
+                    </li>
+                    <li class="toolOptions">
+                        <div class="toolIcon">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+                        <div class="toolText">
+                            <h3>Advanced Options</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn</p>
+                        </div>
+                    </li>
+                    <li class="toolOptions">
+                        <div class="toolIcon">
+                            <i class="fa-solid fa-face-smile"></i>
+                        </div>
+                        <div class="toolText">
+                            <h3>Customizable</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="meetOurTeam" id="meetOurTeam">
+            <div class="wrapper">
+                <h2>Meet Our Team</h2>
+                <div class="profileContainer">
+                    <ul>
+                        <li>
+                            <div class="textContainer teamPlayers">
+                                <h3>Team Players</h3>
+                                <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/home-5.jpeg" alt="A man smiling with an orange tie">
+                        </li>
+                        <li>
+                            <img src="./assets/home-6.jpeg" alt="A young woman with white hair">
+                        </li>
+                        <li>
+                            <img src="./assets/home-7.jpeg" alt="A young woman with tattoos and brown hair">
+                        </li>
+                        <li>
+                            <img src="./assets/home-8.jpeg" alt="A man with black hair stairs at you">
+                        </li>
+                        <li>
+                            <img src="./assets/home-9.jpeg" alt="A woman with glasses and an updo">
+                        </li>
+                        <li>
+                            <div class="textContainer slogan">
+                                <h3>Want to work with us!</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- end of profile container -->
+            </div><!-- end of wrapper -->
+        </section><!-- end of meet our team section -->
+    </main>
+    
     
 </body>
 </html>
