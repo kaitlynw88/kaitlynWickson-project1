@@ -1,0 +1,43 @@
+html {
+    font-size: 125%;
+}
+
+body{
+    font-family: $bodyFont;
+    font-weight: normal;
+    color: $black;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: $headingFont;
+}
+
+h1{
+    font-size: 1.85rem;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+}
+
+p{
+    font-size: 0.7rem;
+}
+
+ul,
+li,
+a {
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style: none;
+    font-size: 0.7rem;
+ }
+
+.searchCart a{
+    font-size: 0.7rem;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+ }

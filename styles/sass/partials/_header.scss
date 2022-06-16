@@ -1,0 +1,48 @@
+header{
+    background-image: url(../assets/home-1.jpeg);
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+}
+.headerBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.siteNav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        padding: 0 15px;
+    }
+    
+}
+
+.searchCart {
+    display: flex;
+    justify-content: space-between;
+    .bag {
+        position: relative;
+        .counter {
+            position: absolute;
+            bottom: -22px;
+            right: 8px;
+            background-color: $primary;
+            border-radius: 50%;
+            height: 14px;
+            width: 14px;
+            font-size: 12px;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+}
+
+.searchCart a{
+    padding: 0 15px;
+}
+
+
+
