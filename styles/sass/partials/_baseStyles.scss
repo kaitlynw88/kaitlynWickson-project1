@@ -21,5 +21,6 @@ img {
     &:focus {
         background-color: $black;
         color: $offWhite;
+        transform: scale(1.2);
     }
 }

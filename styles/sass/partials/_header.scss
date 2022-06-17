@@ -19,6 +19,14 @@ header{
     }
 }
 
+.siteNav ul li:hover,
+.siteNav ul li:focus,
+.searchCart a:hover,
+.searchCart a:focus {
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
 .searchCart {
     display: flex;
     justify-content: center;
@@ -26,15 +34,18 @@ header{
         position: relative;
         .counter {
             position: absolute;
-            bottom: -22px;
-            right: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: -8px;
+            right: 2px;
             background-color: $primary;
             border-radius: 50%;
-            height: 14px;
-            width: 14px;
+            height: 18px;
+            width: 18px;
             font-size: 12px;
             text-align: center;
-            font-weight: bold;
+            font-weight: bold;  
         }
     }
 }

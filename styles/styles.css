@@ -235,11 +235,14 @@ body {
   font-weight: normal;
   color: #333333;
   letter-spacing: 0.3px;
+  line-height: 24px;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, form {
   font-family: "Montserrat";
   font-weight: normal;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -251,6 +254,7 @@ h1 {
 
 p {
   font-size: 0.7rem;
+  margin: 0;
 }
 
 ul,
@@ -265,7 +269,7 @@ ul {
   font-size: 0.7rem;
 }
 
-.searchCart a {
+.searchCart a, label {
   font-size: 0.7rem;
 }
 
@@ -298,6 +302,8 @@ img {
 .button:hover, .button:focus {
   background-color: #333333;
   color: #f6f6f6;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 header {
@@ -334,6 +340,14 @@ header {
   padding: 0 15px;
 }
 
+.siteNav ul li:hover,
+.siteNav ul li:focus,
+.searchCart a:hover,
+.searchCart a:focus {
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
 .searchCart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,12 +361,21 @@ header {
 }
 .searchCart .bag .counter {
   position: absolute;
-  bottom: -22px;
-  right: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: -8px;
+  right: 2px;
   background-color: #c3dab7;
   border-radius: 50%;
-  height: 14px;
-  width: 14px;
+  height: 18px;
+  width: 18px;
   font-size: 12px;
   text-align: center;
   font-weight: bold;
@@ -498,6 +521,7 @@ header {
   width: 60px;
   border-radius: 50%;
   margin-right: 15px;
+  font-size: 1rem;
 }
 
 .meetOurTeam .wrapper {
@@ -512,6 +536,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
+  padding-top: 50px;
 }
 
 .profileContainer {
@@ -523,6 +548,7 @@ header {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 50px 0px;
 }
 .profileContainer .flexGrow {
   background-color: #f6f6f6;
@@ -562,6 +588,14 @@ header {
   position: relative;
   height: 600px;
 }
+.contactUs .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .contactUs .contactUsImg {
   background-image: url(../assets/home-10.jpeg);
   background-position: center;
@@ -570,15 +604,6 @@ header {
   height: 600px;
   position: absolute;
   right: 0;
-}
-
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .contactContainer {
@@ -598,4 +623,67 @@ header {
   text-align: center;
   width: 40%;
   margin-left: 40px;
+}
+
+footer {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 10px;
+  height: 400px;
+}
+
+.howToContact, .posts, form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(33.3333333333% - 20px);
+  margin: 10px;
+}
+.howToContact h4, .posts h4, form h4 {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.socials {
+  padding: 10px 0 0 10px;
+  font-size: 1.25rem;
+}
+.socials a:nth-child(2) {
+  padding: 10px;
+}
+
+.socials a:hover, .socials a:focus {
+  font-size: 1.5rem;
+}
+
+.posts li {
+  list-style-type: disc;
+}
+.posts li:hover, .posts li:focus {
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+form {
+  display: inline;
+}
+form label {
+  border: none;
+}
+form .twitterSubmit {
+  background-color: #c3dab7;
+  border: none;
+}
+form .twitterSubmit:hover, form .twitterSubmit:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }

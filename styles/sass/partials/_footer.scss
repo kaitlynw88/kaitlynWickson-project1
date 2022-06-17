@@ -1,0 +1,54 @@
+footer{
+    background-color: $black;
+    color: $white;
+    .wrapper{
+        display: flex;
+        padding:80px 10px;
+        height: 400px;
+    }
+}
+
+.howToContact, .posts, form{
+    display: flex;
+    flex-direction: column;
+    width:calc((100% / 3) - 20px);
+    margin:10px;
+    h4{
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+}
+
+.socials{
+    padding:10px 0 0 10px;
+    font-size: 1.25rem;
+    a:nth-child(2){
+        padding:10px;
+    }
+}
+
+.socials a:hover, .socials a:focus{
+    font-size: 1.5rem;
+}
+
+.posts li{
+    list-style-type:disc;
+        &:hover, &:focus{
+            font-size: 1rem;
+            text-decoration: underline;
+        }
+   }
+
+form{
+    display: inline;
+    label{
+        border:none;
+    }
+    .twitterSubmit{
+        background-color: $primary;
+        border: none;
+        &:hover , &:focus{
+            transform: scale(1.2);
+        } 
+    }
+}
