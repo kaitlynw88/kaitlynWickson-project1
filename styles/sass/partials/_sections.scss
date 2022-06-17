@@ -1,0 +1,42 @@
+.branding{
+    background-color: $primary;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .brandImg{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top:160px;
+    }
+
+    .brandingTextContainer{
+        display: flex;
+        width:50%;
+        margin: 50px 0 90px 0;
+        .brandItem {
+            padding: 0 25px;
+        }
+    }
+
+    .brandImg::after {
+        content: "";
+        background-image: url("../assets/home-circle-text.png");
+        background-size: 50% 50%;
+        z-index: 10;
+        display: inline-block;
+        background-repeat: no-repeat;
+        width:300px;
+        height:300px;
+        position: absolute;
+        top:-70px;
+        left:-70px;
+    }
+    .brandItem{
+        text-align: center;
+    }
+}
+

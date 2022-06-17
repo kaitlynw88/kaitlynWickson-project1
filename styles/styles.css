@@ -236,11 +236,13 @@ body {
   color: #333333;
 }
 
-h1, h2, h3, h4, h5 {
+h2, h3, h4, h5 {
   font-family: "Montserrat";
+  font-weight: normal;
 }
 
 h1 {
+  font-family: "Montserrat";
   font-size: 1.85rem;
   font-weight: bold;
   letter-spacing: 0.9px;
@@ -284,7 +286,7 @@ img {
 
 header {
   background-image: url(../assets/home-1.jpeg);
-  height: 90vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
 }
@@ -305,14 +307,14 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.siteNav ul li {
+.siteNav ul li a {
   padding: 0 15px;
 }
 
@@ -320,9 +322,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .searchCart .bag {
   position: relative;
@@ -342,4 +344,59 @@ header {
 
 .searchCart a {
   padding: 0 15px;
+}
+
+.branding {
+  background-color: #c3dab7;
+}
+.branding .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.branding .brandImg {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 160px;
+}
+.branding .brandingTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin: 50px 0 90px 0;
+}
+.branding .brandingTextContainer .brandItem {
+  padding: 0 25px;
+}
+.branding .brandImg::after {
+  content: "";
+  background-image: url("../assets/home-circle-text.png");
+  background-size: 50% 50%;
+  z-index: 10;
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: -70px;
+  left: -70px;
+}
+.branding .brandItem {
+  text-align: center;
 }

@@ -8,11 +8,13 @@ body{
     color: $black;
 }
 
-h1,h2,h3,h4,h5{
+h2,h3,h4,h5{
     font-family: $headingFont;
+    font-weight: normal;
 }
 
 h1{
+    font-family: $headingFont;
     font-size: 1.85rem;
     font-weight: bold;
     letter-spacing: 0.9px;
