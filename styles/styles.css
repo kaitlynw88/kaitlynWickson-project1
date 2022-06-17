@@ -274,8 +274,10 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .wrapper {
@@ -413,6 +415,7 @@ header {
           align-items: center;
   height: 550px;
   border: 2px solid blue;
+  padding: 0 125px;
 }
 
 .blogContainer {
@@ -424,6 +427,9 @@ header {
   width: 200px;
   border-radius: 50%;
   margin: 0 auto;
+}
+.blogContainer p {
+  margin-top: 50px;
 }
 
 .ourTools {
@@ -445,15 +451,126 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 50%;
   border: 2px solid red;
+  padding: 70px 0;
 }
-.ourTools .wrapper .toolBox .toolOptions {
+
+.toolOptions {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid blue;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.toolOptions .toolIcon i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #333333;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.meetOurTeam .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+.profileContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.profileContainer .flexGrow {
+  background-color: #f6f6f6;
+  margin: 10px;
+  width: calc(50% - 20px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 100px 0 50px;
+}
+.profileContainer .teamItem {
+  width: calc(25% - 20px);
+  padding: 0px;
+  margin: 10px;
+}
+.profileContainer .slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+}
+
+.contactUs {
+  background-color: #c3dab7;
+  height: 600px;
+}
+.contactUs .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.contactUsImg {
+  width: 50%;
+  background-image: url(../assets/home-10.jpeg);
 }

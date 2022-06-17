@@ -48,6 +48,7 @@
     align-items: center;
     height:550px;
     border:2px solid blue;
+    padding:0 125px;
 }
 
 .blogContainer{
@@ -59,6 +60,9 @@
         border-radius: 50%;
         margin: 0 auto;
     }
+    p{
+        margin-top:50px;
+    }
 }
 
 
@@ -67,20 +71,91 @@
     background-image: url("../assets/home-4.jpeg");
     background-position: center;
     background-size: cover;
+    
     .wrapper{
         display: flex;
         justify-content: flex-end;
         .toolBox {
-                display: flex;
-                flex-wrap: wrap;
-                width: 50%;
-                border: 2px solid red;
-                .toolOptions {
-                    width: calc(50%);
-                    display: flex;
-                    align-items: center;
-                }
-            }
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            width:50%;
+            border: 2px solid red;
+            padding:70px 0;
+        }
+    }
+}
+
+.toolOptions {
+    width:50%;
+    display: flex;
+    border:2px solid blue;
+    align-items: center;
+    justify-content: space-between;
+        .toolIcon i{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid $black;
+            height:60px;
+            width:60px;
+            border-radius: 50%;
+            margin-right:15px;
+        }
+}
+
+.meetOurTeam .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:auto;
+}
+
+.profileContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .flexGrow{
+        background-color: $offWhite;
+        margin:10px;
+        width: calc( (100%/2) - 20px);
+        display: flex;
+        align-items: center;
+        padding:0 100px 0 50px;
+    }
+    .teamItem{
+        width: calc( (100%/4) - 20px);
+        padding:0px;
+        margin:10px;
     }
     
+    .slogan {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $offWhite;
+        }
+}
+
+// Drop us a Line
+
+.contactUs{
+    background-color: $primary;
+    height:600px;
+    .wrapper{
+        display: flex;
+    }
+}
+
+.contactContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:50%;
+}
+
+.contactUsImg{
+    width:50%;
+    background-image: url(../assets/home-10.jpeg);
 }
