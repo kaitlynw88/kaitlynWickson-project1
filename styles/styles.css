@@ -372,7 +372,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 160px;
+  margin-top: 150px;
 }
 .branding .brandingTextContainer {
   display: -webkit-box;
@@ -399,4 +399,61 @@ header {
 }
 .branding .brandItem {
   text-align: center;
+}
+
+.blog .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 550px;
+  border: 2px solid blue;
+}
+
+.blogContainer {
+  width: 40%;
+  text-align: center;
+}
+.blogContainer img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.ourTools {
+  background-image: url("../assets/home-4.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.ourTools .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.ourTools .wrapper .toolBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  border: 2px solid red;
+}
+.ourTools .wrapper .toolBox .toolOptions {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
