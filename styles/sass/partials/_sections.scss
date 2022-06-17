@@ -47,7 +47,6 @@
     justify-content: space-between;
     align-items: center;
     height:550px;
-    border:2px solid blue;
     padding:0 125px;
 }
 
@@ -80,7 +79,6 @@
             flex-wrap: wrap;
             justify-content: flex-end;
             width:50%;
-            border: 2px solid red;
             padding:70px 0;
         }
     }
@@ -89,7 +87,6 @@
 .toolOptions {
     width:50%;
     display: flex;
-    border:2px solid blue;
     align-items: center;
     justify-content: space-between;
         .toolIcon i{
@@ -140,22 +137,33 @@
 // Drop us a Line
 
 .contactUs{
-    background-color: $primary;
+    background-color:$primary;
+    display: flex;
+    position: relative;
     height:600px;
-    .wrapper{
-        display: flex;
-    }
+    .contactUsImg{
+        background-image: url(../assets/home-10.jpeg);
+        background-position: center;
+        background-size: cover;
+        width:50%;
+        height:600px;
+        position: absolute;
+        right:0;
+    }            
 }
 
-.contactContainer{
+.wrapper{
+    display: flex;
+    align-items: center;
+}
+.contactContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width:50%;
+    text-align: center;
+    width: 40%;
+    margin-left:40px;
 }
 
-.contactUsImg{
-    width:50%;
-    background-image: url(../assets/home-10.jpeg);
-}
+

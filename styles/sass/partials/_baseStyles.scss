@@ -9,3 +9,17 @@ img {
     width:90%;
     margin: 0 auto;
 }
+
+.button {
+    background-color: $offWhite;
+    line-height: 1.2rem;
+    font-weight: bold;
+    font-family: $headingFont;
+    letter-spacing: 0.7px;
+    padding: 15px 15px;
+    &:hover,
+    &:focus {
+        background-color: $black;
+        color: $offWhite;
+    }
+}

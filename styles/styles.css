@@ -234,6 +234,7 @@ body {
   font-family: "Open Sans";
   font-weight: normal;
   color: #333333;
+  letter-spacing: 0.3px;
 }
 
 h2, h3, h4, h5 {
@@ -284,6 +285,19 @@ img {
   max-width: 1280px;
   width: 90%;
   margin: 0 auto;
+}
+
+.button {
+  background-color: #f6f6f6;
+  line-height: 1.2rem;
+  font-weight: bold;
+  font-family: "Montserrat";
+  letter-spacing: 0.7px;
+  padding: 15px 15px;
+}
+.button:hover, .button:focus {
+  background-color: #333333;
+  color: #f6f6f6;
 }
 
 header {
@@ -414,7 +428,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 550px;
-  border: 2px solid blue;
   padding: 0 125px;
 }
 
@@ -455,7 +468,6 @@ header {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 50%;
-  border: 2px solid red;
   padding: 70px 0;
 }
 
@@ -464,7 +476,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid blue;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -545,12 +556,29 @@ header {
 
 .contactUs {
   background-color: #c3dab7;
-  height: 600px;
-}
-.contactUs .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  height: 600px;
+}
+.contactUs .contactUsImg {
+  background-image: url(../assets/home-10.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 600px;
+  position: absolute;
+  right: 0;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contactContainer {
@@ -567,10 +595,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
-}
-
-.contactUsImg {
-  width: 50%;
-  background-image: url(../assets/home-10.jpeg);
+  text-align: center;
+  width: 40%;
+  margin-left: 40px;
 }
