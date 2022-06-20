@@ -10,6 +10,23 @@ header{
     align-items: center;
 }
 
+header input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+    &:checked~.siteNav {
+        left: 0;
+    }
+}
+.siteNav {
+    background-color: transparent;
+    position: fixed;
+    left: -506px;
+    top:50px;
+    max-width: 506px;
+    transition: 0.75s;
+    
+}
+
 .siteNav ul{
     display: flex;
     justify-content: center;
