@@ -4,12 +4,28 @@
     position: sticky;
     background-color: $white;
     top: 0;
+    z-index: 10;
 }
 
 .contactHeader {
     background-image: url(../assets/contact-1.jpeg);
     height: 25vh;
     background-position: center;
+    font-size: 2rem;
+    line-height: 1.025;
+    position: relative;
+    h2{
+        position: absolute;
+        bottom:-60px;
+        left:80px;
+        &::first-letter{
+            border-top: 4px solid $black;
+            padding-top:20px;
+        }
+    }
+    span {
+        display: block;
+        }
 }
 
 .contactPage{
@@ -19,6 +35,11 @@
     align-items: flex-start;
 }
 
+.contactDetails{
+    border:2px solid salmon;
+    margin-top:90px;
+    padding-bottom:50px;
+}
 .contactDigits{
     display: flex;
     justify-content: center;
@@ -34,5 +55,33 @@
     li:nth-child(2){
         border-right:1px solid $black;
         border-left:1px solid $black;
+    }
+}
+
+.contactPage form{
+    // border:2px solid aquamarine;
+    width: 100%;
+
+    
+    input{
+        width:calc(33% - 20px);
+        margin: 0 10px;
+        border:none;
+        border-bottom: 2px solid $black;
+        opacity: 0.5;
+        &:hover, &:focus{
+            opacity: 1;
+        }
+    }
+    textarea{
+        display: block;
+        width:100%;
+        margin-top:20px;
+        border:none;
+        border-bottom:2px solid $black;
+        opacity: 0.5;
+        &:hover,&:focus {
+                opacity: 1;
+            }
     }
 }
