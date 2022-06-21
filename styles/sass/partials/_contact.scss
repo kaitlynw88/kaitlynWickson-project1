@@ -1,0 +1,38 @@
+// header styles
+
+.contactNav {
+    position: sticky;
+    background-color: $white;
+    top: 0;
+}
+
+.contactHeader {
+    background-image: url(../assets/contact-1.jpeg);
+    height: 25vh;
+    background-position: center;
+}
+
+.contactPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contactDigits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid yellow;
+    width:100%;
+    li{
+        padding:40px 60px;
+        a{
+            font-size: 1.5rem;
+        }
+    }
+    li:nth-child(2){
+        border-right:1px solid $black;
+        border-left:1px solid $black;
+    }
+}

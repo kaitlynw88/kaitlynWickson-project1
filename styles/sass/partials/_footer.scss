@@ -4,7 +4,6 @@ footer{
     .wrapper{
         display: flex;
         padding:80px 10px;
-        height: 400px;
     }
 }
 
@@ -52,5 +51,12 @@ form{
         &:hover , &:focus{
             transform: scale(1.2);
         } 
+    }
+}
+
+.footerLogo{
+    text-align: center;
+    h4{
+        padding-bottom:50px;
     }
 }
