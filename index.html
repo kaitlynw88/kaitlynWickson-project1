@@ -17,19 +17,23 @@
         <div class="wrapper">
             <div class="headerBanner">
 
-                <input type="checkbox" id="openSideMenu">
-                <label for="openSideMenu" class="menuButton">
-                    <span class="sr-only">Navigation Menu</span>
-                    <i class="fa-solid fa-bars"></i>
-                </label>
+                <div class="siteNavContainer">
+                    <!-- taken from Toybox code along -->
+                    <input type="checkbox" id="openSideMenu">
+                    <label for="openSideMenu" class="menuButton">
+                        <span class="sr-only">Navigation Menu</span>
+                        <i class="fa-solid fa-bars"></i>
+                    </label> <!-- end of take code -->
+                    
+                    <nav class="siteNav">
+                        <ul>
+                            <li><a href="#home"></a>Home</li>
+                            <li><a href="#blog"></a>Blog</li>
+                            <li><a href="#portfolio"></a>Portfolio</li>
+                        </ul>
+                    </nav><!-- end of siteNav -->
+                </div>
 
-                <nav class="siteNav">
-                    <ul>
-                        <li><a href="#home"></a>Home</li>
-                        <li><a href="#blog"></a>Blog</li>
-                        <li><a href="#portfolio"></a>Portfolio</li>
-                    </ul>
-                </nav><!-- end of siteNav -->
                 <a href="#home">
                     <h1>Creative</h1>
                 </a>

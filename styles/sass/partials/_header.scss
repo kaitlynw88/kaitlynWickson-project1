@@ -24,7 +24,6 @@ header input[type=checkbox] {
     top:50px;
     max-width: 506px;
     transition: 0.75s;
-    
 }
 
 .siteNav ul{
@@ -34,6 +33,13 @@ header input[type=checkbox] {
     li a{
         padding: 0 15px;
     }
+}
+
+.siteNav ul li,
+.siteNav ul li,
+.searchCart a,
+.searchCart a {
+    transition: font-size 0.3s, text-decoration 0.3s;
 }
 
 .siteNav ul li:hover,

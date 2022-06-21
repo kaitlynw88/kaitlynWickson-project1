@@ -33,6 +33,7 @@ footer{
 
 .posts li{
     list-style-type:disc;
+    transition: font-size 0.3s, text-decoration 0.3s;
         &:hover, &:focus{
             font-size: 1rem;
             text-decoration: underline;
@@ -47,6 +48,7 @@ form{
     .twitterSubmit{
         background-color: $primary;
         border: none;
+        transition: transform 0.3s;
         &:hover , &:focus{
             transform: scale(1.2);
         } 

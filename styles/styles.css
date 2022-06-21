@@ -358,6 +358,16 @@ header input[type=checkbox]:checked ~ .siteNav {
   padding: 0 15px;
 }
 
+.siteNav ul li,
+.siteNav ul li,
+.searchCart a,
+.searchCart a {
+  -webkit-transition: font-size 0.3s, -webkit-text-decoration 0.3s;
+  transition: font-size 0.3s, -webkit-text-decoration 0.3s;
+  transition: font-size 0.3s, text-decoration 0.3s;
+  transition: font-size 0.3s, text-decoration 0.3s, -webkit-text-decoration 0.3s;
+}
+
 .siteNav ul li:hover,
 .siteNav ul li:focus,
 .searchCart a:hover,
@@ -468,11 +478,11 @@ header input[type=checkbox]:checked ~ .siteNav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 550px;
   padding: 0 125px;
 }
 
 .blogContainer {
+  margin: 80px 0;
   width: 40%;
   text-align: center;
 }
@@ -524,6 +534,9 @@ header input[type=checkbox]:checked ~ .siteNav {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.toolOptions .toolText h3 {
+  margin-bottom: 14px;
+}
 .toolOptions .toolIcon i {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,7 +551,7 @@ header input[type=checkbox]:checked ~ .siteNav {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 20px;
   font-size: 1rem;
 }
 
@@ -604,7 +617,7 @@ header input[type=checkbox]:checked ~ .siteNav {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 600px;
+  height: 75vh;
 }
 .contactUs .wrapper {
   display: -webkit-box;
@@ -619,7 +632,7 @@ header input[type=checkbox]:checked ~ .siteNav {
   background-position: center;
   background-size: cover;
   width: 50%;
-  height: 600px;
+  height: 75vh;
   position: absolute;
   right: 0;
 }
@@ -685,6 +698,10 @@ footer .wrapper {
 
 .posts li {
   list-style-type: disc;
+  -webkit-transition: font-size 0.3s, -webkit-text-decoration 0.3s;
+  transition: font-size 0.3s, -webkit-text-decoration 0.3s;
+  transition: font-size 0.3s, text-decoration 0.3s;
+  transition: font-size 0.3s, text-decoration 0.3s, -webkit-text-decoration 0.3s;
 }
 .posts li:hover, .posts li:focus {
   font-size: 1rem;
@@ -700,14 +717,125 @@ form label {
 form .twitterSubmit {
   background-color: #c3dab7;
   border: none;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 form .twitterSubmit:hover, form .twitterSubmit:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
+@media (max-width: 1000px) {
+  .ourTools .wrapper .toolBox {
+    width: 75%;
+  }
+}
 @media (max-width: 800px) {
-  .siteNav ul {
-    display: none;
+  .branding .brandImg {
+    width: 75%;
+  }
+
+  .branding .brandImg::after {
+    width: 225px;
+    height: 225px;
+    top: -50px;
+    left: -50px;
+  }
+
+  .branding .brandingTextContainer {
+    width: 80%;
+  }
+
+  .blogContainer {
+    width: 80%;
+  }
+
+  .blog .wrapper {
+    padding: 0 10px;
+  }
+
+  .ourTools .wrapper .toolBox {
+    width: 100%;
+  }
+
+  .profileContainer .flexGrow {
+    width: calc(100% - 20px);
+  }
+  .profileContainer .teamItem {
+    width: calc(50% - 20px);
+  }
+
+  .contactUs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+  }
+  .contactUs .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+  .contactUs .contactUsImg {
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .branding .brandingTextContainer {
+    width: 75%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .branding .brandingTextContainer .brandItem {
+    padding: 10px;
+  }
+
+  .ourTools .wrapper .toolBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .toolOptions {
+    width: 100%;
+  }
+
+  .profileContainer .flexGrow {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 0;
+  }
+  .profileContainer .teamItem {
+    width: calc(100% - 20px);
+  }
+
+  footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+
+  .howToContact,
+.posts,
+form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: calc(100% - 20px);
+    margin: 10px auto;
   }
 }

@@ -1,17 +1,102 @@
 // Breakpoints for 1000/800/500
 
 //1000px
-@media(max-width:1000px){
-   
-}
-
-// 800
-@media(max-width:800px){
-
-    
-    .siteNav ul{
-        display: none;
+@media(max-width: 1000px){
+    .ourTools .wrapper .toolBox{
+        width:75%;
     }
 }
 
+// 800
+@media(max-width: 800px){
+
+    .branding .brandImg{
+        width:75%;
+    }
+
+    .branding .brandImg::after{
+        width:225px;
+        height:225px;
+        top:-50px;
+        left:-50px;
+    }
+    .branding .brandingTextContainer{
+        width:80%;
+    }
+
+    .blogContainer{
+        width:80%;
+    }
+    .blog .wrapper{
+        padding: 0 10px;
+    }
+
+        .ourTools .wrapper .toolBox {
+            width: 100%;
+        }
+    
+    .profileContainer {
+        .flexGrow {
+                width:calc(100% - 20px);
+            }
+        .teamItem{
+            width:calc(50% - 20px);
+        }
+    }
+
+    .contactUs{
+        flex-direction: column-reverse;
+        height:auto;
+        .wrapper{
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        .contactUsImg{
+            margin-top:50px;
+            position: relative;
+            width: 100%;
+        }
+        
+    }
+    
+}
+
 // 500
+@media(max-width:500px){
+    .branding .brandingTextContainer {
+            width: 75%;
+            flex-direction: column;
+            .brandItem{
+                padding:10px;
+            }
+        }
+
+         .ourTools .wrapper .toolBox {
+             flex-direction: column;
+         }
+         .toolOptions{
+            width:100%;
+         }
+    
+        .profileContainer {
+            .flexGrow{
+                flex-grow: 1;
+                padding:0;
+            }
+            .teamItem {
+                width: calc(100% - 20px);
+            }
+        }
+
+    footer .wrapper{
+        flex-direction: column;
+        height:auto;
+    }
+        .howToContact,
+        .posts,
+        form {
+            flex-direction: column;
+            width: calc(100% - 20px);
+            margin: 10px auto;
+        }
+}
