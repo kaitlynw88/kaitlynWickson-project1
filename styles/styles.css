@@ -746,18 +746,21 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
   background-position: center;
   font-size: 2rem;
   line-height: 1.025;
-  position: relative;
 }
-.contactHeader h2 {
+.contactHeader .wrapper {
+  position: relative;
+  height: 100%;
+}
+.contactHeader .wrapper h2 {
   position: absolute;
   bottom: -60px;
-  left: 80px;
+  left: 0;
 }
-.contactHeader h2::first-letter {
+.contactHeader .wrapper h2::first-letter {
   border-top: 4px solid #333333;
   padding-top: 20px;
 }
-.contactHeader span {
+.contactHeader .wrapper span {
   display: block;
 }
 
@@ -779,7 +782,7 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
 
 .contactDetails {
   border: 2px solid salmon;
-  margin-top: 90px;
+  margin-top: 120px;
   padding-bottom: 50px;
 }
 
@@ -790,6 +793,8 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -798,6 +803,8 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
 }
 .contactDigits li {
   padding: 40px 60px;
+  min-width: 240px;
+  width: 30%;
 }
 .contactDigits li a {
   font-size: 1.5rem;
@@ -807,11 +814,17 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
   border-left: 1px solid #333333;
 }
 
+.getInTouch {
+  margin: 50px 0;
+}
+
 .contactPage form {
   width: 100%;
 }
 .contactPage form input {
   width: calc(33% - 20px);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 10px;
   border: none;
   border-bottom: 2px solid #333333;
@@ -830,6 +843,25 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
 }
 .contactPage form textarea:hover, .contactPage form textarea:focus {
   opacity: 1;
+}
+.contactPage form .contactButton {
+  border: none;
+  border-bottom: 2px solid #333333;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin: 50px 0;
+  opacity: 0.5;
+}
+.contactPage form .contactButton:hover, .contactPage form .contactButton:focus {
+  opacity: 1;
+}
+
+.contactImage {
+  background-image: url(../assets/contact-2.jpeg);
+  height: 80vh;
+  background-size: cover;
+  background-position: top;
 }
 
 @media (max-width: 1000px) {
