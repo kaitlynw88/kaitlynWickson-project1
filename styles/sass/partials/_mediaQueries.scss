@@ -2,10 +2,55 @@
 
 //1000px
 @media(max-width: 1000px){
+
+    .headerBanner{
+        position: fixed;
+        z-index: 20;
+        width:80%;
+    }
+    .siteNavContainer{
+        position: relative;
+    }
+    .siteNavContainer label i {
+            display: block;
+        }
+        .siteNav{
+            left: -506px;
+            top: 30px;
+            max-width: 506px;
+            transition: 0.75s;
+            background-color: $primary;
+            z-index: 30;
+            position: absolute;
+            ul{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                li{
+                    padding:10px 0;
+                    margin:0 10px;
+                    a{
+                        padding:0;
+                    }
+                }
+            }
+            .counter{
+                background-color: $white;
+            }
+        }
+       .searchCart {
+           display: none;
+       }
     .ourTools .wrapper .toolBox{
         width:75%;
     }
+
+    .hiddenMenu{
+        display: block;
+    }
 }
+
+
 
 // 800
 @media(max-width: 800px){

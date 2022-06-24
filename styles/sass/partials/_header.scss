@@ -8,22 +8,47 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // position: relative;
+    position: fixed;
+    z-index: 20;
+    width: 80%;
+}
+
+.siteNavContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.siteNavContainer label i {
+    display: none;
 }
 
 header input[type=checkbox] {
     opacity: 0;
     position: absolute;
-    &:checked~.siteNav {
+    &:checked~.siteNav{
         left: 0;
     }
 }
+
+// header input[type=checkbox] {
+//     opacity: 0;
+//     position: absolute;
+//     &:checked~.searchCart {
+//         left: -375px;
+//     }
+// }
+.hiddenMenu{
+    display: none;
+}
 .siteNav {
-    background-color: transparent;
-    position: fixed;
-    left: -506px;
-    top:50px;
-    max-width: 506px;
-    transition: 0.75s;
+    // background-color: transparent;
+    position: relative;
+    // left: -506px;
+    // top:50px;
+    // max-width: 506px;
+    // transition: 0.75s;
 }
 
 .siteNav ul{
@@ -53,29 +78,30 @@ header input[type=checkbox] {
 .searchCart {
     display: flex;
     justify-content: center;
-    .bag {
-        position: relative;
-        .counter {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            bottom: -8px;
-            right: 2px;
-            background-color: $primary;
-            border-radius: 50%;
-            height: 18px;
-            width: 18px;
-            font-size: 12px;
-            text-align: center;
-            font-weight: bold;  
-        }
-    }
+    position: relative;
 }
 
 .searchCart a{
     padding: 0 15px;
 }
 
+.bag {
+    position: relative;
+    .counter {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: -8px;
+        right: 2px;
+        background-color: $primary;
+        border-radius: 50%;
+        height: 18px;
+        width: 18px;
+        font-size: 12px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
 
 

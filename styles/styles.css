@@ -323,6 +323,25 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  z-index: 20;
+  width: 80%;
+}
+
+.siteNavContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.siteNavContainer label i {
+  display: none;
 }
 
 header input[type=checkbox] {
@@ -333,14 +352,12 @@ header input[type=checkbox]:checked ~ .siteNav {
   left: 0;
 }
 
+.hiddenMenu {
+  display: none;
+}
+
 .siteNav {
-  background-color: transparent;
-  position: fixed;
-  left: -506px;
-  top: 50px;
-  max-width: 506px;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+  position: relative;
 }
 
 .siteNav ul {
@@ -383,11 +400,17 @@ header input[type=checkbox]:checked ~ .siteNav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.searchCart .bag {
   position: relative;
 }
-.searchCart .bag .counter {
+
+.searchCart a {
+  padding: 0 15px;
+}
+
+.bag {
+  position: relative;
+}
+.bag .counter {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,10 +430,6 @@ header input[type=checkbox]:checked ~ .siteNav {
   font-size: 12px;
   text-align: center;
   font-weight: bold;
-}
-
-.searchCart a {
-  padding: 0 15px;
 }
 
 .branding {
@@ -734,10 +753,17 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
 }
 
 .contactNav {
-  position: sticky;
   background-color: #FFFFFF;
-  top: 0;
-  z-index: 10;
+  height: auto;
+  height: 75px;
+}
+
+.contactNav input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+.contactNav input[type=checkbox]:checked ~ .siteNav {
+  left: 0;
 }
 
 .contactHeader {
@@ -865,8 +891,63 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
 }
 
 @media (max-width: 1000px) {
+  .headerBanner {
+    position: fixed;
+    z-index: 20;
+    width: 80%;
+  }
+
+  .siteNavContainer {
+    position: relative;
+  }
+
+  .siteNavContainer label i {
+    display: block;
+  }
+
+  .siteNav {
+    left: -506px;
+    top: 30px;
+    max-width: 506px;
+    -webkit-transition: 0.75s;
+    transition: 0.75s;
+    background-color: #c3dab7;
+    z-index: 30;
+    position: absolute;
+  }
+  .siteNav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .siteNav ul li {
+    padding: 10px 0;
+    margin: 0 10px;
+  }
+  .siteNav ul li a {
+    padding: 0;
+  }
+  .siteNav .counter {
+    background-color: #FFFFFF;
+  }
+
+  .searchCart {
+    display: none;
+  }
+
   .ourTools .wrapper .toolBox {
     width: 75%;
+  }
+
+  .hiddenMenu {
+    display: block;
   }
 }
 @media (max-width: 800px) {
