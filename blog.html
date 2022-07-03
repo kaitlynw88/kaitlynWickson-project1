@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/98f3a36dcd.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="blogStyles">
     <header>
         <div class="wrapper">
             <div class="headerBanner">
@@ -63,17 +63,18 @@
                     </a>
                 </div><!-- end searchCart -->
             </div><!-- end headerBanner -->
+            <div class="verticleLine"></div>
         </div><!-- end wrapper -->
     </header>
     <main>
         <section class="blogPost">
             <div class="wrapper">
-                <div>
+                <div class="blogPostTitle">
                     <h2>How to run a creative agency</h2>
                     <span>
                         <a href="./index.html">home</a>
                         <a href="./blog.html">blog</a>
-                        <a href="#">How to run a creative Agency </a>
+                        <p>How to run a creative Agency </p>
                     </span>
                 </div>
             
@@ -87,7 +88,7 @@
                     </div>
             
                     <ul class="postInfo">
-                        <li class="postDate">
+                        <li>
                             <h4>Date</h4>
                             <p>July 31, 2018</p>
                         </li>
@@ -102,44 +103,54 @@
                     </ul>
                 </div>
                 <article>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fuga fugiat iusto? In aspernatur
-                        quaerat odio quibusdam dolorum culpa et incidunt nesciunt minima doloribus. Illo id quas similique eum
-                        quidem?
+                    <p>
+                        <span class="boldText articleText">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fuga fugiat iusto? In aspernaturquaerat odio quibusdam dolorum culpa et incidunt nesciunt minima doloribus. Illo id quas similique eum
+                            quidem?
+                        </span>
             
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quis, quidem, rem consectetur quam
-                        doloremque cum reiciendis incidunt ut alias voluptatum tempore eius laudantium, voluptatem pariatur ipsa
-                        optio veniam molestiae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat provident dolorem,
-                        suscipit repellat alias voluptas laboriosam eos minus harum aliquam voluptate quis cum quo, dicta odio autem
-                        blanditiis error accusantium!
-            
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit optio rerum facilis magni aliquam
-                        aliquid dolorum aperiam expedita. Nostrum, quibusdam alias quos totam aliquid maxime perspiciatis
-                        accusantium neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laborum odit laudantium
-                        debitis assumenda eveniet modi possimus doloremque provident quae pariatur aperiam praesentium tempora, amet
-                        voluptatum ipsa labore facilis quod?
-            
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore minima cum pariatur error dolor. Aut
-                        consectetur, eum corporis minima assumenda aliquam ullam, quisquam sunt ea earum quibusdam distinctio
-                        pariatur dolores!
+                        <span class="articleText">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quis, quidem, rem consectetur quam
+                            doloremque cum reiciendis incidunt ut alias voluptatum tempore eius laudantium, voluptatem pariatur ipsa
+                            optio veniam molestiae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat provident dolorem,
+                            suscipit repellat alias voluptas laboriosam eos minus harum aliquam voluptate quis cum quo, dicta odio autem
+                            blanditiis error accusantium!
+                        </span>
+
+                        <span class="articleText">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quis, quidem, rem consectetur quam
+                            doloremque cum reiciendis incidunt ut alias voluptatum tempore eius laudantium, voluptatem pariatur ipsa
+                            optio veniam molestiae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat provident dolorem,
+                            suscipit repellat alias voluptas laboriosam eos minus harum aliquam voluptate quis cum quo, dicta odio autem
+                            blanditiis error accusantium!
+                        </span>
+
+                        <span class="articleText">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quis, quidem, rem consectetur quam
+                            doloremque cum reiciendis incidunt ut alias voluptatum tempore eius laudantium, voluptatem pariatur ipsa
+                            optio veniam molestiae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat provident dolorem,
+                            suscipit repellat alias voluptas laboriosam eos minus harum aliquam voluptate quis cum quo, dicta odio autem
+                            blanditiis error accusantium!
+                        </span>
                     </p>
+                    <div class="socials">
+                        <h4>Share:</h4>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Link to Facebook</span>
+                        </a>
+                    
+                        <a href="#">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Link to Twitter</span>
+                        </a>
+                    
+                        <a href="#">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Link to Instagram</span>
+                        </a>
+                    </div>
                 </article>
-                <div class="socials">
-                    <h4>Share:</h4>
-                    <a href="#">
-                        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Link to Facebook</span>
-                    </a>
-            
-                    <a href="#">
-                        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Link to Twitter</span>
-                    </a>
-            
-                    <a href="#">
-                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Link to Instagram</span>
-                    </a>
-                </div>
             </div><!-- end of wrapper -->
         </section> <!-- end of blogPost -->
         
@@ -148,50 +159,52 @@
             <div class="wrapper">
                 <h2>Related Posts</h2>
                 <div class="postContainer">
-                    <div class="post1">
+                    <div class=" pastPost post1">
                         <img src="./assets/blog-3.jpeg" alt="image for post 1">
                         <p>July, 25, 2018</p>
                     </div>
-                    <div class="post2">
+                    <div class="pastPost post2">
                         <img src="./assets/blog-4.jpeg" alt="image for post 2">
                         <p>July, 26, 2018</p>
                     </div>
-                    <div class="post3">
+                    <div class="pastPost post3">
                         <img src="./assets/blog-5.jpeg" alt="image for post 3">
+                        <p>July, 27, 2018</p>
                     </div>
                 </div>
             </div><!-- end of wrapper -->
         </section><!-- end of Related posts -->
 
         <section class="comments">
-            <h2>02 Comments</h2>
-            <a href="#">-Reply</a>
-            <div class="comment1">
-                <img src="./assets/blog-6.jpeg" alt="Daniel Vandaft">
-                <div class="commenntText">
-                    <h4>Daniel Vadaft</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, laborum debitis.</p>
-                    <p class="date">Jul 26, 2018 at 10 hours ago</p>
+            <div class="wrapper">
+                <h2>02 Comments</h2>
+                <div class="comment1">
+                    <img src="./assets/blog-6.jpeg" alt="Daniel Vandaft">
+                    <div class="commentText">
+                        <h4>Daniel Vadaft</h4>
+                        <a href="#">-Reply</a>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, laborum debitis.</p>
+                        <p class="date">Jul 26, 2018 at 10 hours ago</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="comment2">
-                <img src="./assets/blog-7.jpeg" alt="Jenifer Loopz">
-                <div class="commenntText">
-                    <h4>Jenifer Loopz</h4>
-                    <a href="#">-Reply</a>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, laborum debitis.</p>
-                    <p class="date">Jul 26, 2018 at 10 hours ago</p>
+                
+                <div class="comment2">
+                    <img src="./assets/blog-7.jpeg" alt="Jenifer Loopz">
+                    <div class="commentText">
+                        <h4>Jenifer Loopz</h4>
+                        <a href="#">-Reply</a>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, laborum debitis.</p>
+                        <p class="date">Jul 26, 2018 at 10 hours ago</p>
+                    </div>
                 </div>
-            </div>
+            </div><!-- end of wrapper -->
         </section><!-- end of comments -->
         
         <section class="leaveAComment">
             <div class="wrapper">
-                <div class="getInTouch">
-                    <h2>Leave a comment</h2>
-                    <p>If you have any questions, please don't hesitate to send us a message</p>
-                </div>
+
+                <h2>Leave a comment</h2>
+                
             
                 <form>
                     <label for="name" class="sr-only">Name</label>

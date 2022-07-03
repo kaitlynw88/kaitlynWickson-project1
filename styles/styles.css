@@ -252,7 +252,7 @@ h1 {
   letter-spacing: 0.9px;
 }
 
-p {
+p, ul li a {
   font-size: 0.7rem;
   margin: 0;
 }
@@ -266,7 +266,6 @@ a {
 
 ul {
   list-style: none;
-  font-size: 0.7rem;
 }
 
 .searchCart a, label {
@@ -298,12 +297,14 @@ img {
   font-family: "Montserrat";
   letter-spacing: 0.7px;
   padding: 15px 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .button:hover, .button:focus {
   background-color: #333333;
   color: #f6f6f6;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.125);
+          transform: scale(1.125);
 }
 
 header {
@@ -311,6 +312,14 @@ header {
   height: 100vh;
   background-position: center;
   background-size: cover;
+}
+header .verticleLine {
+  background-color: rgba(51, 51, 51, 0.4);
+  height: 150px;
+  width: 1px;
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
 }
 
 .headerBanner {
@@ -375,8 +384,8 @@ header input[type=checkbox]:checked ~ .siteNav {
   padding: 0 15px;
 }
 
-.siteNav ul li,
-.siteNav ul li,
+.siteNav ul li a,
+.siteNav ul li a,
 .searchCart a,
 .searchCart a {
   -webkit-transition: font-size 0.3s, -webkit-text-decoration 0.3s;
@@ -385,8 +394,8 @@ header input[type=checkbox]:checked ~ .siteNav {
   transition: font-size 0.3s, text-decoration 0.3s, -webkit-text-decoration 0.3s;
 }
 
-.siteNav ul li:hover,
-.siteNav ul li:focus,
+.siteNav ul li a:hover,
+.siteNav ul li a:focus,
 .searchCart a:hover,
 .searchCart a:focus {
   font-size: 1rem;
@@ -637,6 +646,7 @@ header input[type=checkbox]:checked ~ .siteNav {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f6f6f6;
+  text-align: center;
 }
 
 .contactUs {
@@ -692,7 +702,8 @@ footer .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 80px 10px;
+  padding: 60px 10px;
+  border-bottom: 1.5px solid #f6f6f6;
 }
 
 .howToContact, .posts, form {
@@ -713,14 +724,16 @@ footer .wrapper {
 
 .socials {
   padding: 10px 0 0 10px;
-  font-size: 1.25rem;
+}
+.socials a {
+  font-size: 1rem;
 }
 .socials a:nth-child(2) {
-  padding: 10px;
+  padding: 15px 0;
 }
 
 .socials a:hover, .socials a:focus {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .posts li {
@@ -759,7 +772,7 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
   text-align: center;
 }
 .footerLogo h4 {
-  padding-bottom: 50px;
+  padding: 40px 0;
 }
 
 .contactNav {
@@ -817,7 +830,6 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
 }
 
 .contactDetails {
-  border: 2px solid salmon;
   margin-top: 120px;
   padding-bottom: 50px;
 }
@@ -834,7 +846,6 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid yellow;
   width: 100%;
 }
 .contactDigits li {
@@ -865,7 +876,7 @@ form input {
   margin: 0 10px;
   border: none;
   border-bottom: 2px solid #333333;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 form input:hover, form input:focus {
   opacity: 1;
@@ -876,7 +887,7 @@ form textarea {
   margin-top: 20px;
   border: none;
   border-bottom: 2px solid #333333;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 form textarea:hover, form textarea:focus {
   opacity: 1;
@@ -888,7 +899,7 @@ form .contactButton {
   text-transform: uppercase;
   padding-bottom: 10px;
   margin: 50px 0;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 form .contactButton:hover, form .contactButton:focus {
   opacity: 1;
@@ -899,6 +910,176 @@ form .contactButton:hover, form .contactButton:focus {
   height: 80vh;
   background-size: cover;
   background-position: top;
+}
+
+.blogStyles h4 {
+  text-transform: uppercase;
+}
+
+.blogPostTitle {
+  margin: 75px 0;
+}
+.blogPostTitle h2 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.blogPostTitle span a {
+  opacity: 0.6;
+  display: inline;
+  font-size: 0.7rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.blogPostTitle span a::after {
+  content: "/";
+}
+.blogPostTitle span a:hover, .blogPostTitle span a:focus {
+  opacity: 1;
+  text-decoration: underline;
+}
+.blogPostTitle span p {
+  display: inline;
+}
+
+.articleInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1.5px solid rgba(51, 51, 51, 0.4);
+}
+.articleInfo p {
+  opacity: 0.6;
+}
+.articleInfo .authorInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.articleInfo .authorInfo .authorImg {
+  background-image: url("../assets/blog-2.jpeg");
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.articleInfo .postInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.articleInfo .postInfo li {
+  margin: 0 60px;
+}
+
+article .boldText {
+  font-weight: bold;
+  display: block;
+}
+
+.articleText {
+  padding: 10px 0;
+  display: block;
+}
+
+article .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+article .socials h4 {
+  margin-right: 10px;
+}
+article .socials a:nth-child(3) {
+  padding: 0 10px;
+}
+
+.relatedPosts .wrapper h2 {
+  border-bottom: 1.5px solid rgba(51, 51, 51, 0.4);
+  padding-bottom: 20px;
+  margin: 40px 0;
+}
+
+.postContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.postContainer .pastPost {
+  width: 32%;
+}
+.postContainer .pastPost p {
+  text-transform: uppercase;
+}
+.postContainer img {
+  padding-bottom: 10px;
+}
+
+.comments .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comments .wrapper h2 {
+  border-bottom: 1.5px solid rgba(51, 51, 51, 0.4);
+  padding-bottom: 20px;
+  margin: 40px 0;
+}
+
+.comment1, .comment2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+.comment1 img, .comment2 img {
+  height: 75px;
+  width: 75px;
+  margin-right: 50px;
+}
+
+.commentText {
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.commentText h4 {
+  display: inline;
+  margin-bottom: 20px;
+}
+.commentText a, .commentText .date {
+  opacity: 0.6;
+}
+.commentText p {
+  margin-top: 8px;
+}
+
+.leaveAComment .wrapper h2 {
+  border-bottom: 1.5px solid rgba(51, 51, 51, 0.4);
+  padding-bottom: 20px;
+  margin: 40px 0;
 }
 
 @media (max-width: 1000px) {
@@ -960,6 +1141,10 @@ form .contactButton:hover, form .contactButton:focus {
   .hiddenMenu {
     display: block;
   }
+
+  .articleInfo .postInfo li {
+    margin: 0 20px;
+  }
 }
 @media (max-width: 800px) {
   .branding .brandImg {
@@ -991,6 +1176,7 @@ form .contactButton:hover, form .contactButton:focus {
 
   .profileContainer .flexGrow {
     width: calc(100% - 20px);
+    padding: 60px 0;
   }
   .profileContainer .teamItem {
     width: calc(50% - 20px);
@@ -1013,6 +1199,27 @@ form .contactButton:hover, form .contactButton:focus {
   .contactUs .contactUsImg {
     margin-top: 50px;
     position: relative;
+    width: 100%;
+  }
+
+  .articleInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .articleInfo .authorInfo {
+    margin-bottom: 20px;
+  }
+
+  .postContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .postContainer .pastPost {
     width: 100%;
   }
 }
@@ -1043,10 +1250,13 @@ form .contactButton:hover, form .contactButton:focus {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    padding: 0;
+    text-align: center;
   }
   .profileContainer .teamItem {
     width: calc(100% - 20px);
+  }
+  .profileContainer .slogan {
+    padding: 60px 0;
   }
 
   footer .wrapper {
@@ -1066,5 +1276,15 @@ form {
             flex-direction: column;
     width: calc(100% - 20px);
     margin: 10px auto;
+  }
+
+  .articleInfo .postInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .articleInfo .postInfo li {
+    margin: 10px 0;
   }
 }

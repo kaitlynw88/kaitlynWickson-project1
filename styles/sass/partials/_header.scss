@@ -3,6 +3,14 @@ header{
     height: 100vh;
     background-position: center;
     background-size: cover;
+    .verticleLine{
+        background-color: rgba(51, 51, 51, 0.4);
+        height:150px;
+        width:1px;
+        position: absolute;
+        bottom:-75px;
+        left:50%
+    }
 }
 .headerBanner{
     display: flex;
@@ -60,15 +68,15 @@ header input[type=checkbox] {
     }
 }
 
-.siteNav ul li,
-.siteNav ul li,
+.siteNav ul li a,
+.siteNav ul li a,
 .searchCart a,
 .searchCart a {
     transition: font-size 0.3s, text-decoration 0.3s;
 }
 
-.siteNav ul li:hover,
-.siteNav ul li:focus,
+.siteNav ul li a:hover,
+.siteNav ul li a:focus,
 .searchCart a:hover,
 .searchCart a:focus {
     font-size: 1rem;
