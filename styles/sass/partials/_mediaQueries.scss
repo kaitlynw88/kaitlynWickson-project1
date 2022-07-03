@@ -123,6 +123,22 @@
                 width: 100%;
             }
         }
+    
+    .emailForm input{
+        width:50%;
+    }
+
+     .contactDigits {
+        flex-direction: column;
+        li:nth-child(2) {
+                border: none;
+                border-top: 1px solid $black;
+                border-bottom: 1px solid $black;
+            }
+     }
+     
+
+    
 }
 
 // 500
@@ -158,14 +174,17 @@
 
     footer .wrapper{
         flex-direction: column;
+        padding:0;
         height:auto;
+        
     }
         .howToContact,
         .posts,
-        form {
+        .footerForm {
             flex-direction: column;
             width: calc(100% - 20px);
             margin: 10px auto;
+            text-align: center;
         }
 
     
@@ -175,4 +194,9 @@
                 margin:10px 0;
             }
         }
+    
+    .emailForm input {
+        width: 80%;
+        }
+
 }

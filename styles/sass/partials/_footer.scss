@@ -8,7 +8,7 @@ footer{
     }
 }
 
-.howToContact, .posts, form{
+.howToContact, .posts, .footerForm{
     display: flex;
     flex-direction: column;
     width:calc((100% / 3) - 20px);
@@ -42,13 +42,12 @@ footer{
         }
    }
 
-form{
+.footerForm{
     display: block;
     label{
         border:none;
         display: block;
     }
-
     .twitterSubmit{
         background-color: $primary;
         border: none;

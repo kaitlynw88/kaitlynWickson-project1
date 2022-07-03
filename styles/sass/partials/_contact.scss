@@ -74,13 +74,12 @@
     margin: 50px 0;
 }
 
-form{
+.emailForm{
     width: 100%;
-    
     input{
         width:calc(32% - 20px);
-        min-width: 200px;
-        flex-wrap: wrap;
+        // min-width: 200px;
+        display: inline;
         margin: 0 10px;
         border:none;
         border-bottom: 2px solid $black;

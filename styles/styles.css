@@ -706,7 +706,7 @@ footer .wrapper {
   border-bottom: 1.5px solid #f6f6f6;
 }
 
-.howToContact, .posts, form {
+.howToContact, .posts, .footerForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -717,7 +717,7 @@ footer .wrapper {
   width: calc(33.3333333333% - 20px);
   margin: 10px;
 }
-.howToContact h4, .posts h4, form h4 {
+.howToContact h4, .posts h4, .footerForm h4 {
   margin-bottom: 20px;
   font-size: 0.9rem;
 }
@@ -748,14 +748,14 @@ footer .wrapper {
   text-decoration: underline;
 }
 
-form {
+.footerForm {
   display: block;
 }
-form label {
+.footerForm label {
   border: none;
   display: block;
 }
-form .twitterSubmit {
+.footerForm .twitterSubmit {
   background-color: #c3dab7;
   border: none;
   -webkit-transition: -webkit-transform 0.3s;
@@ -763,7 +763,7 @@ form .twitterSubmit {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-form .twitterSubmit:hover, form .twitterSubmit:focus {
+.footerForm .twitterSubmit:hover, .footerForm .twitterSubmit:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -865,23 +865,21 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
   margin: 50px 0;
 }
 
-form {
+.emailForm {
   width: 100%;
 }
-form input {
+.emailForm input {
   width: calc(32% - 20px);
-  min-width: 200px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: inline;
   margin: 0 10px;
   border: none;
   border-bottom: 2px solid #333333;
   opacity: 0.4;
 }
-form input:hover, form input:focus {
+.emailForm input:hover, .emailForm input:focus {
   opacity: 1;
 }
-form textarea {
+.emailForm textarea {
   display: block;
   width: 100%;
   margin-top: 20px;
@@ -889,10 +887,10 @@ form textarea {
   border-bottom: 2px solid #333333;
   opacity: 0.4;
 }
-form textarea:hover, form textarea:focus {
+.emailForm textarea:hover, .emailForm textarea:focus {
   opacity: 1;
 }
-form .contactButton {
+.emailForm .contactButton {
   border: none;
   border-bottom: 2px solid #333333;
   background-color: #FFFFFF;
@@ -901,7 +899,7 @@ form .contactButton {
   margin: 50px 0;
   opacity: 0.4;
 }
-form .contactButton:hover, form .contactButton:focus {
+.emailForm .contactButton:hover, .emailForm .contactButton:focus {
   opacity: 1;
 }
 
@@ -1222,6 +1220,22 @@ article .socials a:nth-child(3) {
   .postContainer .pastPost {
     width: 100%;
   }
+
+  .emailForm input {
+    width: 50%;
+  }
+
+  .contactDigits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactDigits li:nth-child(2) {
+    border: none;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+  }
 }
 @media (max-width: 500px) {
   .branding .brandingTextContainer {
@@ -1264,18 +1278,20 @@ article .socials a:nth-child(3) {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
     height: auto;
   }
 
   .howToContact,
 .posts,
-form {
+.footerForm {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: calc(100% - 20px);
     margin: 10px auto;
+    text-align: center;
   }
 
   .articleInfo .postInfo {
@@ -1286,5 +1302,9 @@ form {
   }
   .articleInfo .postInfo li {
     margin: 10px 0;
+  }
+
+  .emailForm input {
+    width: 80%;
   }
 }
