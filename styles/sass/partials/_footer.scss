@@ -40,10 +40,12 @@ footer{
    }
 
 form{
-    display: inline;
+    display: block;
     label{
         border:none;
+        display: block;
     }
+
     .twitterSubmit{
         background-color: $primary;
         border: none;

@@ -393,6 +393,15 @@ header input[type=checkbox]:checked ~ .siteNav {
   text-decoration: underline;
 }
 
+.menuButton {
+  padding: 4px;
+  -webkit-transition: font-size 0.3s;
+  transition: font-size 0.3s;
+}
+.menuButton:hover, .menuButton:focus {
+  font-size: 1.2rem;
+}
+
 .searchCart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,10 +736,11 @@ footer .wrapper {
 }
 
 form {
-  display: inline;
+  display: block;
 }
 form label {
   border: none;
+  display: block;
 }
 form .twitterSubmit {
   background-color: #c3dab7;
@@ -844,11 +854,12 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
   margin: 50px 0;
 }
 
-.contactPage form {
+form {
   width: 100%;
 }
-.contactPage form input {
-  width: calc(33% - 20px);
+form input {
+  width: calc(32% - 20px);
+  min-width: 200px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 10px;
@@ -856,10 +867,10 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
   border-bottom: 2px solid #333333;
   opacity: 0.5;
 }
-.contactPage form input:hover, .contactPage form input:focus {
+form input:hover, form input:focus {
   opacity: 1;
 }
-.contactPage form textarea {
+form textarea {
   display: block;
   width: 100%;
   margin-top: 20px;
@@ -867,10 +878,10 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
   border-bottom: 2px solid #333333;
   opacity: 0.5;
 }
-.contactPage form textarea:hover, .contactPage form textarea:focus {
+form textarea:hover, form textarea:focus {
   opacity: 1;
 }
-.contactPage form .contactButton {
+form .contactButton {
   border: none;
   border-bottom: 2px solid #333333;
   background-color: #FFFFFF;
@@ -879,7 +890,7 @@ form .twitterSubmit:hover, form .twitterSubmit:focus {
   margin: 50px 0;
   opacity: 0.5;
 }
-.contactPage form .contactButton:hover, .contactPage form .contactButton:focus {
+form .contactButton:hover, form .contactButton:focus {
   opacity: 1;
 }
 

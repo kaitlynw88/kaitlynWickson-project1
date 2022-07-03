@@ -75,6 +75,14 @@ header input[type=checkbox] {
     text-decoration: underline;
 }
 
+.menuButton{
+    padding:4px;
+    transition: font-size 0.3s;
+    &:hover,&:focus{
+        font-size: 1.2rem;
+    }
+}
+
 .searchCart {
     display: flex;
     justify-content: center;
