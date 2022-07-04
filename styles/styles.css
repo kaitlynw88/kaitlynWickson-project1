@@ -1232,6 +1232,10 @@ article .socials a:nth-child(3) {
             flex-direction: column;
     margin-top: 50px;
   }
+  .contactUs .contactContainer {
+    margin: 0;
+    width: 60%;
+  }
   .contactUs .contactUsImg {
     margin-top: 50px;
     position: relative;
