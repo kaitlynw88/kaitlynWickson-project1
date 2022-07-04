@@ -3,6 +3,8 @@ footer{
     color: $white;
     .wrapper{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         padding:60px 10px;
         border-bottom: 1.5px solid $offWhite;
     }
@@ -12,6 +14,7 @@ footer{
     display: flex;
     flex-direction: column;
     width:calc((100% / 3) - 20px);
+    min-width: 275px;
     margin:10px;
     h4{
         margin-bottom: 20px;
@@ -46,7 +49,11 @@ footer{
     display: block;
     label{
         border:none;
-        display: block;
+        display:block;
+    }
+    input{
+        display: inline;
+        min-width:150px;
     }
     .twitterSubmit{
         background-color: $primary;

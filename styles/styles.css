@@ -307,18 +307,26 @@ img {
           transform: scale(1.125);
 }
 
-header {
+.mainHeader {
   background-image: url(../assets/home-1.jpeg);
-  height: 100vh;
+  height: 90vh;
   background-position: center;
   background-size: cover;
 }
-header .verticleLine {
+.mainHeader .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mainHeader .verticleLine {
   background-color: rgba(51, 51, 51, 0.4);
   height: 150px;
   width: 1px;
   position: absolute;
-  bottom: -75px;
+  bottom: 5px;
   left: 50%;
 }
 
@@ -334,7 +342,7 @@ header .verticleLine {
           align-items: center;
   position: fixed;
   z-index: 20;
-  width: 80%;
+  width: 90%;
 }
 
 .siteNavContainer {
@@ -702,6 +710,11 @@ footer .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 60px 10px;
   border-bottom: 1.5px solid #f6f6f6;
 }
@@ -715,6 +728,7 @@ footer .wrapper {
       -ms-flex-direction: column;
           flex-direction: column;
   width: calc(33.3333333333% - 20px);
+  min-width: 275px;
   margin: 10px;
 }
 .howToContact h4, .posts h4, .footerForm h4 {
@@ -755,6 +769,10 @@ footer .wrapper {
   border: none;
   display: block;
 }
+.footerForm input {
+  display: inline;
+  min-width: 150px;
+}
 .footerForm .twitterSubmit {
   background-color: #c3dab7;
   border: none;
@@ -780,6 +798,14 @@ footer .wrapper {
   height: auto;
   height: 75px;
 }
+.contactNav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 .contactNav input[type=checkbox] {
   opacity: 0;
@@ -789,27 +815,38 @@ footer .wrapper {
   left: 0;
 }
 
-.contactHeader {
+.contactHero {
   background-image: url(../assets/contact-1.jpeg);
   height: 25vh;
   background-position: center;
+  background-repeat: no-repeat;
   font-size: 2rem;
   line-height: 1.025;
 }
-.contactHeader .wrapper {
+.contactHero .wrapper {
   position: relative;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.contactHeader .wrapper h2 {
+
+.contactHeader {
+  position: relative;
+}
+.contactHeader h2 {
   position: absolute;
   bottom: -60px;
   left: 0;
 }
-.contactHeader .wrapper h2::first-letter {
+.contactHeader h2::first-letter {
   border-top: 4px solid #333333;
   padding-top: 20px;
 }
-.contactHeader .wrapper span {
+.contactHeader span {
   display: block;
 }
 
@@ -870,6 +907,7 @@ footer .wrapper {
 }
 .emailForm input {
   width: calc(32% - 20px);
+  min-width: 200px;
   display: inline;
   margin: 0 10px;
   border: none;
@@ -1082,12 +1120,12 @@ article .socials a:nth-child(3) {
 
 @media (max-width: 1000px) {
   .headerBanner {
-    position: fixed;
-    z-index: 20;
-    width: 80%;
+    background-color: #f6f6f6;
+    width: 100%;
+    padding: 0 40px;
   }
 
-  .siteNavContainer {
+  header {
     position: relative;
   }
 
@@ -1097,11 +1135,12 @@ article .socials a:nth-child(3) {
 
   .siteNav {
     left: -506px;
-    top: 30px;
+    top: 60px;
     max-width: 506px;
+    width: 200px;
     -webkit-transition: 0.75s;
     transition: 0.75s;
-    background-color: #c3dab7;
+    background-color: #f6f6f6;
     z-index: 30;
     position: absolute;
   }
@@ -1222,7 +1261,7 @@ article .socials a:nth-child(3) {
   }
 
   .emailForm input {
-    width: 50%;
+    width: 80%;
   }
 
   .contactDigits {
@@ -1278,6 +1317,7 @@ article .socials a:nth-child(3) {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 80%;
     padding: 0;
     height: auto;
   }
@@ -1289,7 +1329,7 @@ article .socials a:nth-child(3) {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: calc(100% - 20px);
+    width: calc(80% - 20px);
     margin: 10px auto;
     text-align: center;
   }
@@ -1302,9 +1342,5 @@ article .socials a:nth-child(3) {
   }
   .articleInfo .postInfo li {
     margin: 10px 0;
-  }
-
-  .emailForm input {
-    width: 80%;
   }
 }

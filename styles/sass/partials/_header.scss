@@ -1,25 +1,29 @@
-header{
+.mainHeader{
     background-image: url(../assets/home-1.jpeg);
-    height: 100vh;
+    height: 90vh;
     background-position: center;
     background-size: cover;
+    .wrapper{
+        display: flex;
+        justify-content: center;
+    }
     .verticleLine{
         background-color: rgba(51, 51, 51, 0.4);
         height:150px;
         width:1px;
         position: absolute;
-        bottom:-75px;
+        bottom:5px;
         left:50%
     }
 }
+
 .headerBanner{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // position: relative;
     position: fixed;
     z-index: 20;
-    width: 80%;
+    width: 90%;
 }
 
 .siteNavContainer{
@@ -40,23 +44,11 @@ header input[type=checkbox] {
     }
 }
 
-// header input[type=checkbox] {
-//     opacity: 0;
-//     position: absolute;
-//     &:checked~.searchCart {
-//         left: -375px;
-//     }
-// }
 .hiddenMenu{
     display: none;
 }
 .siteNav {
-    // background-color: transparent;
     position: relative;
-    // left: -506px;
-    // top:50px;
-    // max-width: 506px;
-    // transition: 0.75s;
 }
 
 .siteNav ul{

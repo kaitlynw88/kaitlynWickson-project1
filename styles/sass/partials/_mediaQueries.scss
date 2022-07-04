@@ -2,13 +2,13 @@
 
 //1000px
 @media(max-width: 1000px){
-
+    // header
     .headerBanner{
-        position: fixed;
-        z-index: 20;
-        width:80%;
+        background-color: $offWhite;
+        width:100%;
+        padding:0 40px;
     }
-    .siteNavContainer{
+    header{
         position: relative;
     }
     .siteNavContainer label i {
@@ -16,10 +16,11 @@
         }
         .siteNav{
             left: -506px;
-            top: 30px;
+            top: 60px;
             max-width: 506px;
+            width:200px;
             transition: 0.75s;
-            background-color: $primary;
+            background-color: $offWhite;
             z-index: 30;
             position: absolute;
             ul{
@@ -48,7 +49,7 @@
     .hiddenMenu{
         display: block;
     }
-
+    // blog page
     .articleInfo .postInfo li{
         margin:0 20px;
     }
@@ -59,6 +60,7 @@
 // 800
 @media(max-width: 800px){
 
+    //Branding Section
     .branding .brandImg{
         width:75%;
     }
@@ -73,6 +75,8 @@
         width:80%;
     }
 
+    // blog Section Home page,
+
     .blogContainer{
         width:80%;
     }
@@ -84,6 +88,7 @@
             width: 100%;
         }
     
+    // Meet our team
     .profileContainer {
         .flexGrow {
                 width:calc(100% - 20px);
@@ -94,6 +99,7 @@
         }
     }
 
+    // Drop us a Line section
     .contactUs{
         flex-direction: column-reverse;
         height:auto;
@@ -108,7 +114,7 @@
         }
         
     }
-
+    // blog page How to run a creative Agency
     .articleInfo{
         flex-direction: column;
         align-items: flex-start;
@@ -116,18 +122,19 @@
             margin-bottom:20px;
         }
     }
-    
+        // blog past posts
         .postContainer {
            flex-wrap: wrap;
             .pastPost {
                 width: 100%;
             }
         }
-    
+    //email form (Contact and Blog page)
     .emailForm input{
-        width:50%;
+        width:80%;
     }
 
+    // contact Page, contact details
      .contactDigits {
         flex-direction: column;
         li:nth-child(2) {
@@ -137,12 +144,11 @@
             }
      }
      
-
-    
 }
 
 // 500
 @media(max-width:500px){
+    // branding section, home page
     .branding .brandingTextContainer {
             width: 75%;
             flex-direction: column;
@@ -150,7 +156,7 @@
                 padding:10px;
             }
         }
-
+        // our Tools section
          .ourTools .wrapper .toolBox {
              flex-direction: column;
          }
@@ -158,6 +164,7 @@
             width:100%;
          }
     
+        //  meet our Team
         .profileContainer {
             .flexGrow{
                 flex-grow: 1;
@@ -171,9 +178,11 @@
                 padding: 60px 0;
             }
         }
-
+    
+        // footer section
     footer .wrapper{
         flex-direction: column;
+        width:80%;
         padding:0;
         height:auto;
         
@@ -182,21 +191,17 @@
         .posts,
         .footerForm {
             flex-direction: column;
-            width: calc(100% - 20px);
+            width: calc(80% - 20px);
             margin: 10px auto;
             text-align: center;
         }
 
-    
+    // Blog page, information about post
     .articleInfo .postInfo{
             flex-direction: column;
             li{
                 margin:10px 0;
             }
-        }
-    
-    .emailForm input {
-        width: 80%;
         }
 
 }

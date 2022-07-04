@@ -4,6 +4,10 @@
     background-color: $white;
     height: auto;
     height:75px;
+    .wrapper{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .contactNav input[type=checkbox] {
@@ -14,29 +18,38 @@
     }
 }
 
-.contactHeader {
+.contactHero {
     background-image: url(../assets/contact-1.jpeg);
     height: 25vh;
     background-position: center;
+    background-repeat: no-repeat;
     font-size: 2rem;
     line-height: 1.025;
     .wrapper {
         position: relative;
         height:100%;
-        h2 {
+        display: flex;
+        justify-content: center;
+        } 
+    
+}
+
+.contactHeader{
+    position: relative;
+    h2 {
             position: absolute;
             bottom: -60px;
-            left:0;
+            left: 0;
+    
             &::first-letter {
-                    border-top: 4px solid $black;
-                    padding-top: 20px;
-                }
+                border-top: 4px solid $black;
+                padding-top: 20px;
             }
-        
+        }
+    
         span {
             display: block;
-            }
-    } 
+        }
 }
 
 .contactPage{
@@ -78,7 +91,7 @@
     width: 100%;
     input{
         width:calc(32% - 20px);
-        // min-width: 200px;
+        min-width: 200px;
         display: inline;
         margin: 0 10px;
         border:none;
