@@ -72,8 +72,14 @@ header input[type=checkbox] {
 .siteNav ul li a:focus,
 .searchCart a:hover,
 .searchCart a:focus {
-    font-size: 1rem;
-    text-decoration: underline;
+    text-decoration:line-through
+}
+.searchCart a i:hover,
+.searchCart a i:focus,
+.hiddenMenu a i:hover,
+.hiddenMenu a i:focus {
+    background-color: #c3dab7;
+    border-radius: 50%;
 }
 
 .menuButton{

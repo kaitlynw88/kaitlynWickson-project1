@@ -26,22 +26,22 @@ footer{
     padding:10px 0 0 10px;
     a{
         font-size: 1rem;
+        transition: color 0.3s;
+        margin-right: 40px;
     }
-    a:nth-child(2){
-        padding:15px 0;
-    }
+    // a:nth-child(2){
+    //     // padding:50px 0;
+    // }
 }
 
 .socials a:hover, .socials a:focus{
-    font-size: 1.25rem;
+    color: $primary;
 }
 
 .posts li{
     list-style-type:disc;
-    transition: font-size 0.3s, text-decoration 0.3s;
         &:hover, &:focus{
-            font-size: 1rem;
-            text-decoration: underline;
+            text-decoration: line-through;
         }
    }
 
@@ -66,8 +66,15 @@ footer{
 }
 
 .footerLogo{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:80px;
     h4{
-        padding:40px 0;
+        transition: color 0.4s;
+        display: block;
+    }
+    &:hover, &:focus{
+        color:$primary;
     }
 }

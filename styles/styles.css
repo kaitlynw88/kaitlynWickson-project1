@@ -407,8 +407,15 @@ header input[type=checkbox]:checked ~ .siteNav {
 .siteNav ul li a:focus,
 .searchCart a:hover,
 .searchCart a:focus {
-  font-size: 1rem;
-  text-decoration: underline;
+  text-decoration: line-through;
+}
+
+.searchCart a i:hover,
+.searchCart a i:focus,
+.hiddenMenu a i:hover,
+.hiddenMenu a i:focus {
+  background-color: #c3dab7;
+  border-radius: 50%;
 }
 
 .menuButton {
@@ -742,25 +749,20 @@ footer .wrapper {
 }
 .socials a {
   font-size: 1rem;
-}
-.socials a:nth-child(2) {
-  padding: 15px 0;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  margin-right: 40px;
 }
 
 .socials a:hover, .socials a:focus {
-  font-size: 1.25rem;
+  color: #c3dab7;
 }
 
 .posts li {
   list-style-type: disc;
-  -webkit-transition: font-size 0.3s, -webkit-text-decoration 0.3s;
-  transition: font-size 0.3s, -webkit-text-decoration 0.3s;
-  transition: font-size 0.3s, text-decoration 0.3s;
-  transition: font-size 0.3s, text-decoration 0.3s, -webkit-text-decoration 0.3s;
 }
 .posts li:hover, .posts li:focus {
-  font-size: 1rem;
-  text-decoration: underline;
+  text-decoration: line-through;
 }
 
 .footerForm {
@@ -788,10 +790,24 @@ footer .wrapper {
 }
 
 .footerLogo {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80px;
 }
 .footerLogo h4 {
-  padding: 40px 0;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+  display: block;
+}
+.footerLogo:hover, .footerLogo:focus {
+  color: #c3dab7;
 }
 
 .contactNav {
@@ -1125,15 +1141,12 @@ article .socials a:nth-child(3) {
     width: 100%;
     padding: 0 40px;
   }
-
   header {
     position: relative;
   }
-
   .siteNavContainer label i {
     display: block;
   }
-
   .siteNav {
     left: -506px;
     top: 60px;
@@ -1164,19 +1177,15 @@ article .socials a:nth-child(3) {
   .siteNav ul li a {
     padding: 0;
   }
-
   .searchCart {
     display: none;
   }
-
   .ourTools .wrapper .toolBox {
     width: 75%;
   }
-
   .hiddenMenu {
     display: block;
   }
-
   .articleInfo .postInfo li {
     margin: 0 20px;
   }
@@ -1185,30 +1194,24 @@ article .socials a:nth-child(3) {
   .branding .brandImg {
     width: 75%;
   }
-
   .branding .brandImg::after {
     width: 225px;
     height: 225px;
     top: -50px;
     left: -50px;
   }
-
   .branding .brandingTextContainer {
     width: 80%;
   }
-
   .blogContainer {
     width: 80%;
   }
-
   .blog .wrapper {
     padding: 0 10px;
   }
-
   .ourTools .wrapper .toolBox {
     width: 100%;
   }
-
   .profileContainer .flexGrow {
     width: calc(100% - 20px);
     padding: 60px 0;
@@ -1216,7 +1219,6 @@ article .socials a:nth-child(3) {
   .profileContainer .teamItem {
     width: calc(50% - 20px);
   }
-
   .contactUs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1240,7 +1242,6 @@ article .socials a:nth-child(3) {
     position: relative;
     width: 100%;
   }
-
   .articleInfo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1253,7 +1254,6 @@ article .socials a:nth-child(3) {
   .articleInfo .authorInfo {
     margin-bottom: 20px;
   }
-
   .postContainer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1261,11 +1261,9 @@ article .socials a:nth-child(3) {
   .postContainer .pastPost {
     width: 100%;
   }
-
   .emailForm input {
     width: 80%;
   }
-
   .contactDigits {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1289,18 +1287,15 @@ article .socials a:nth-child(3) {
   .branding .brandingTextContainer .brandItem {
     padding: 10px;
   }
-
   .ourTools .wrapper .toolBox {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .toolOptions {
     width: 100%;
   }
-
   .profileContainer .flexGrow {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -1313,7 +1308,6 @@ article .socials a:nth-child(3) {
   .profileContainer .slogan {
     padding: 60px 0;
   }
-
   footer .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1323,7 +1317,6 @@ article .socials a:nth-child(3) {
     padding: 0;
     height: auto;
   }
-
   .howToContact,
 .posts,
 .footerForm {
@@ -1335,7 +1328,6 @@ article .socials a:nth-child(3) {
     margin: 10px auto;
     text-align: center;
   }
-
   .articleInfo .postInfo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
